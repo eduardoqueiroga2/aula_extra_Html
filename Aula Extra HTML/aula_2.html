@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="aula_2.css">
+</head>
+
+<body>
+  <!--   <div id="id_div"> </div>
+
+    <div class="class_div"> </div> -->
+    <div class="container">
+        <form onsubmit="enviarLogin(event)">
+            <h1>Login</h1>
+            <input type="email" name="email" id="email" placeholder="E-mail" required>
+            <input type="password" name="password" minlength="4" id="password"  placeholder="Senha" required>
+            <button>Entrar</button>
+        </form>
+    </div>
+    <!--     <img src="C034_Caraibi_new.jpg" alt="Praia do Caribe" width="500"> -->
+
+    <script>
+        function enviarLogin(event){
+            event.preventDefault(); /* Impede de aparecer o login e senha no get */
+            console.log(event);
+            let email = document.querySelector('#email').value;
+            let password = document.querySelector('#password').value;
+            console.log({email,password});
+        }    
+
+    </script>
+
+</body>
+
+</html>

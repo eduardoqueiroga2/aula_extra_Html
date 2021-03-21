@@ -1,0 +1,112 @@
+/* Maneira de importar Fonte do Diretório:
+@font-face {
+    font-family: "Syne_mono";
+    src: url("./Syne_Mono/SyneMono-Regular.ttf");   
+  } */
+
+/*
+Maneira de importar Fonte direta do Google:*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); 
+
+* {
+    /* font-family: 'Roboto'; */
+    font-family: 'Roboto';
+    margin: 0; /* resetar a margen da página */
+    padding: 0;/*  resetar o dimensionamento da página */
+}    
+
+#id_div {
+    /* criação de id */
+    background-color: rgba(0, 42, 255, 0.2);
+    /* pode ser o nome da cor "blue" ou o hexadecimal */
+    width: 1000px;
+    /* largura */
+    height: 100px;
+    /* altura */
+    border: 5px solid red;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+    .class_div {
+    /* criação de classe (grupo)*/
+    background-color: rgba(0, 42, 255, 0.2);
+    /* pode ser o nome da cor "blue" ou o hexadecimal */
+    width: 1000px;
+    /* largura */
+    height: 100px;
+    /* altura */
+    border: 5px solid rgb(88, 5, 165);
+    margin-left: 10px;
+    margin-top: 10px;
+
+  
+}
+
+.container{
+    background: url(C034_Caraibi_new.jpg);
+    background-size: cover;
+    width: 100vw; /* visual width = 100% da largura tela que usuário vê */
+    height: 100vh; /* visual height = 100% da altura tela que usuário vê */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{    
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    margin: 15px 0px 0px 0px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+form:hover{
+    background-color: rgb(255, 255, 255);
+    /* text-decoration: underline;    */
+}
+
+form h1{
+
+    margin: 30px 0px 0px 0px;
+    margin-bottom: 15px;
+}
+
+
+form input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 16px;
+    outline: none;
+    padding: 0 5px 5px 0; /* Espaçamento Interno */
+    margin: 5px 0 10px 0; /* Espaçamento Externo */
+    margin-bottom: 15px;
+}
+
+form input:hover{
+    border-bottom: 4px solid #000000;
+}
+
+form input:focus{
+    border-bottom: 4px solid #4464f7;    
+}
+
+form button{
+    background-color: #008dd47a;
+    border: none;
+    color: white;
+    padding: 10px ;
+    margin: 10px 0 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color;
+    margin-bottom: 15px;
+}
+
+form button:hover{
+    background-color: #008dd4;
+    /* text-decoration: underline;    */
+}
